@@ -11,15 +11,15 @@
       el-table-column(prop="score1" label="成绩1" min-width="100" sortable)
         //- 通过score1的值判断是否通过XXX
         template(#default="scope")
-          span(v-if="scope.row.score1 === 'true'") 是
+          span(v-if="scope.row.score1 === true") 是
           span(v-else) 否
       el-table-column(prop="score2" label="成绩2" min-width="100" sortable)
         template(#default="scope")
-          span(v-if="scope.row.score1 === 'true'") 是
+          span(v-if="scope.row.score2 === true") 是
           span(v-else) 否
       el-table-column(prop="score3" label="成绩3" min-width="100" sortable)
         template(#default="scope")
-          span(v-if="scope.row.score1 === 'true'") 是
+          span(v-if="scope.row.score3 === true") 是
           span(v-else) 否
       el-table-column(prop="score" label="总成绩" min-width="100" sortable)
         template(#default="scope")
